@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Primeiro HTML M4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Bem-vindos ao Exemplo de Tags HTML</h1>
+      <nav>
+        <ul>
+          <li><a href="#textos">Textos</a></li>
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#imagens">Imagens</a></li>
+          <li><a href="#tabelas">Tabelas</a></li>
+          <li><a href="#formularios">Formulários</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Seção Textos -->
+      <section id="textos">
+        <h2>1. Textos e Estrutura</h2>
+        <p>
+          Este é um parágrafo simples com uma
+          <strong>palavra em negrito</strong> e outra em <em>itálico</em>.
+          Também podemos usar <b>negrito visual</b> e <i>itálico visual</i>.
+        </p>
+        <h3>Quebra de linha e linha horizontal</h3>
+        <p>Texto antes do <br />quebra de linha.</p>
+        <hr />
+        <p>Linha horizontal separando conteúdo.</p>
+        <h3>Exemplo de código</h3>
+        <code>&lt;div&gt;Uma div de Exemplo&lt;/div&gt;</code>
+      </section>
+
+      <section id="listas">
+        <h2>2- Listas</h2>
+        <h3>Lista não ordenada:</h3>
+        <ul>
+          <li>Arroz</li>
+          <li>Feijão</li>
+          <li>Nescafé</li>
+        </ul>
+
+        <h3>Lista ordenada:</h3>
+        <ol>
+          <li>Arroz</li>
+          <li>Feijão</li>
+          <li>Nescafé</li>
+        </ol>
+      </section>
+
+      <section id="imagens">
+        <h2>3. Imagens e Links</h2>
+        <p>
+          Um link para o
+          <a href="https://gremio.net/" target="_blank">Grêmio</a>
+        </p>
+
+        <a href="https://gremio.net/" target="_blank">
+          <img src="../css/img/logan.png" alt="Imagem do carro Renault Logan" />
+        </a>
+      </section>
+
+      <section id="tabelas">
+        <h2>4. Tabelas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Idade</th>
+              <th>Cidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Anderson</td>
+              <td>38</td>
+              <td>Palhoça</td>
+            </tr>
+            <tr>
+              <td>Jerusa</td>
+              <td>35</td>
+              <td>Fpolis</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3 ">Rodapé da tabela</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="formularios">
+        <h2>5- Formulários</h2>
+        <form action="enviar" method="post">
+          <label for="name">Nome: </label>
+          <input type="text" name="name" id="name" />
+
+          <label for="email">E-mail: </label>
+          <input type="email" name="email" id="email" />
+
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+          />
+
+          <label for="msg">Mensagem:</label>
+          <textarea name="msg" id="msg"></textarea>
+
+          <label for="city">Cidade: </label>
+          <select name="city" id="city">
+            <option value="" disabled selected>Selecione uma cidade</option>
+            <option value="ph">Palhoça</option>
+            <option value="fp">Fpolis</option>
+            <option value="sj">São José</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <section class="Iframes">
+        <h2>6- Iframes</h2>
+        <p>Exemplo de iframe incorporando um site:</p>
+        <iframe
+          src="https://andersondutra7.github.io/Projetos-WEB/"
+          frameborder="0"
+        ></iframe>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>© 2025 - Exemplo de HTML para aula</p>
+    </footer>
+  </body>
+</html>
